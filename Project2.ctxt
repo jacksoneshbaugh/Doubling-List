@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Project2
+comment0.text=\n\ A\ driver\ for\ the\ {@link\ DoublingList}\ class,\ testing\ its\ functionality.\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 04/14/2024\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ Driver\ method\ for\ {@link\ DoublingList}.\n\ \n\ @param\ args\ not\ used\n
+numComments=2

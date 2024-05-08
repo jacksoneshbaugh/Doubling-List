@@ -1,0 +1,46 @@
+#BlueJ class context
+comment0.target=DoublingList
+comment0.text=\n\ An\ implementation\ of\ a\ list\ which\ consists\ of\ nodes\ who\ contain\ arrays\ which\n\ double\ in\ size\ each\ time\ a\ new\ node\ is\ added\ to\ the\ list.\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 04/09/2024\n
+comment1.params=
+comment1.target=DoublingList()
+comment1.text=\n\ Creates\ a\ new,\ empty\ {@code\ DoublingList}.\n
+comment10.params=index
+comment10.target=void\ rightShift(int)
+comment10.text=\n\ Shift\ each\ element\ (starting\ with\ the\ element\ at\ {@code\ index})\ to\ the\ right.\n\ Leaves\ a\ final\ duplicate\ of\ the\ element\ at\ {@code\ index}\ which\ can\ be\ ignored\ for\ these\ use\ cases\ (adding\n\ to\ the\ list)\n\ \n\ @param\ index\ the\ logical\ index\ where\ the\ shift\ should\ occur\n
+comment11.params=logicalIndex
+comment11.target=DoublingList.NodeInfo\ find(int)
+comment11.text=\n\ Fetches\ the\ {@link\ DoublingList\#NodeInfo}\ object\ (node\ and\ offset)\ of\ a\n\ given\ {@code\ logicalIndex}.\n\ \n\ @param\ logicalIndex\ the\ logicalIndex\ to\ locate\n\ @return\ the\ {@code\ NodeInfo}\ that\ corresponds\ to\ the\ given\ {@code\ logicalIndex}\ \n
+comment12.params=
+comment12.target=java.lang.String\ toStringInternal()
+comment12.text=\n\ Returns\ each\ list\ as\ a\ String\ representation,\ using\ "\u2014"\ to\ identify\ empty\ ({@code\ null})\ array\ spaces.\n\ \n\ @return\ the\ String\ representation\ of\ the\ list\n
+comment13.params=iter
+comment13.target=java.lang.String\ toStringInternal(java.util.ListIterator)
+comment13.text=\n\ Returns\ each\ list\ as\ a\ String\ representation,\ using\ "\u2014"\ to\ identify\ empty\ ({@code\ null})\ array\ spaces\ and\ "|"\ to\ show\n\ the\ iterator's\ pointer\ location.\n\ \n\ @param\ iter\ the\ {@code\ ListIterator}\n\ @return\ the\ String\ representation\ of\ the\ list\n
+comment14.params=
+comment14.target=void\ compact()
+comment14.text=\n\ Compacts\ the\ list\ down\ to\ save\ memory.\ To\ be\ used\ by\ {@link\ \#remove(int)}.\n
+comment2.params=
+comment2.target=int\ size()
+comment2.text=\n\ Gets\ the\ size\ of\ the\ list.\n\ \n\ @return\ the\ list's\ size.\n
+comment3.params=nextIndex
+comment3.target=java.util.ListIterator\ listIterator(int)
+comment3.text=\n\ Gets\ a\ {@link\ ListIterator}\ for\ this\ list.\ Use\ {@code\ nextIndex}\ to\ control\ where\ the\ iterator\ starts.\n\ \n\ \n\ @throws\ IndexOutOfBoundsException\ when\ {@code\ nextIndex}\ is\ out\ of\ the\ bounds\ of\ this\ list\ ({@code\ 0}\ to\ {@code\ size()})\n\ @param\ nextIndex\ the\ next\ index\ that\ the\ cursor\ will\ point\ at\ (i.e.,\ the\ first\ call\ to\ {@code\ next()}\ will\n\ return\ the\ element\ at\ this\ location\n\ @return\ a\ ListIterator\ with\ {@code\ nextIndex\ \=\ nextIndex}\n
+comment4.params=
+comment4.target=java.util.Iterator\ iterator()
+comment4.text=\n\ Gets\ a\ {@link\ Iterator}\ for\ this\ list\n\ \n\ @return\ an\ Iterator\ for\ this\ list.\n
+comment5.params=
+comment5.target=java.util.ListIterator\ listIterator()
+comment5.text=\n\ Gets\ a\ {@link\ ListIterator}\ for\ this\ list,\ starting\ at\ the\ beginning\ of\ the\ list.\n\ \n\ @throws\ IndexOutOfBoundsException\ when\ the\ list\ is\ at\ {@code\ size\ \=\ 0}\n\ @return\ a\ ListIterator\ with\ {@code\ nextIndex\ \=\ 0}\n
+comment6.params=element
+comment6.target=boolean\ add(java.lang.Object)
+comment6.text=\n\ Adds\ the\ given\ element\ {@code\ element}\ to\ the\ end\ of\ the\ list.\n\ \n\ @param\ element\ the\ element\ to\ add\ to\ the\ list\n\ @return\ {@code\ true}\ if\ the\ operation\ was\ successful\n
+comment7.params=index\ element
+comment7.target=void\ add(int,\ java.lang.Object)
+comment7.text=\n\ Adds\ the\ given\ element\ {@code\ element}\ to\ the\ list\ at\ index\ {@code\ index}.\n\ \n\ @param\ index\ the\ index\ to\ add\ {@code\ element}\ at\n\ @param\ element\ the\ element\ to\ add\ to\ the\ list\ at\ {@code\ index}\n
+comment8.params=index
+comment8.target=java.lang.Object\ remove(int)
+comment8.text=\n\ Removes\ and\ returns\ the\ element\ at\ {@code\ index}\ from\ the\ list.\n\ \n\ @param\ index\ the\ index\ where\ the\ removal\ should\ occur\n\ @return\ the\ removed\ element\n
+comment9.params=index
+comment9.target=void\ leftShift(int)
+comment9.text=\n\ Shift\ each\ element\ (up\ to\ and\ including\ the\ element\ at\ {@code\ index})\ to\ the\ left.\n\ Leaves\ a\ final\ duplicate\ of\ the\ element\ at\ {@code\ index}\ which\ can\ be\ ignored\ for\ these\ use\ cases\ (adding\n\ to\ the\ list)\n\ \n\ @param\ index\ the\ logical\ index\ where\ the\ shift\ should\ occur.\n
+numComments=15
